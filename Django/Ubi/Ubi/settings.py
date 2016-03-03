@@ -40,6 +40,9 @@ INSTALLED_APPS = [
     #
     'django_extensions',
     'rest_framework',
+    'kronos',
+    #
+    'status_point',
 
 
 ]
@@ -82,7 +85,7 @@ WSGI_APPLICATION = 'Ubi.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'diego',
+        'NAME': 'ubi',
         'USER': 'dsolano',
         'PASSWORD': '',
         'HOST': '',
