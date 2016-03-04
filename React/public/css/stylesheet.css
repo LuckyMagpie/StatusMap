@@ -1,0 +1,42 @@
+footer div{
+  width: 100%;
+  height: 40px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  background-color: #03A9F4;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+}
+
+footer img{
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: relative;
+  margin: 5px auto;
+}
+
+html,body,div#main,.map-gic{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h2{
+  color: #212121;
+  text-align: center;
+  font-size: 1.2em;
+  font-family: 'Raleway', sans-serif;
+}
+
+h5{
+  font-size: 1em;
+  margin-top: 5px;
+  margin-bottom: 0;
+  color: #212121;
+  font-family: 'Raleway', sans-serif;
+}
