@@ -16,8 +16,10 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 from status_point import urls as point_urls
+from status_point.views import routes
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^point/', include(point_urls)),
+    url(r'^$', routes, name='routes')
 ]

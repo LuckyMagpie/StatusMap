@@ -3,7 +3,7 @@ import MySQLdb
 from .models import *
 from .serializers import *
 
-@kronos.register('*/10 * * *')
+@kronos.register('*/5 * * * *')
 def get_indicators():
     c = db.cursor()
 
