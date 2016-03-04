@@ -23,8 +23,7 @@ var/
 *.egg-info/
 .installed.cfg
 *.egg
-*.venv/
-*.json
+
 # PyInstaller
 #  Usually these files are written by a python script from a template
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
@@ -52,6 +51,8 @@ coverage.xml
 
 # Django stuff:
 *.log
+*.venv/
+*.json
 
 # Sphinx documentation
 docs/_build/
@@ -61,3 +62,31 @@ target/
 
 #Ipython Notebook
 .ipynb_checkpoints
+
+#reactJS
+node_modules
+*~
+static
+.grunt
+_SpecRunner.html
+__benchmarks__
+build/
+coverage/
+.module-cache
+*.gem
+docs/.bundle
+docs/code
+docs/_site
+docs/.sass-cache
+docs/js/*
+docs/downloads
+docs/vendor/bundle
+examples/shared/*.js
+test/the-files-to-test.generated.js
+*.log*
+chrome-user-data
+*.sublime-project
+*.sublime-workspace
+.idea
+*.iml
+.vscode
