@@ -53,6 +53,8 @@ coverage.xml
 *.log
 *.venv/
 *.json
+creds
+cron.py
 
 # Sphinx documentation
 docs/_build/

@@ -3,5 +3,5 @@ from .views import *
 
 
 urlpatterns =[
-    url(r'^all$', StatusPointView.as_view(), name='points'),
+    url(r'^$', StatusPointView.as_view(), name='points'),
 ]
