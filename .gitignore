@@ -67,6 +67,7 @@ target/
 
 #reactJS
 node_modules
+!package.json
 *~
 static
 .grunt
