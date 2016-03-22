@@ -1,19 +1,113 @@
+a{
+  text-decoration: none;
+  color: black;
+  transition: all 0.5s ease;
+}
+a:visited{
+  color: black;
+}
+
+a:active{
+  color: black;
+}
+
+a:hover{
+  font-size: 1.1em;
+  background-color: #BBE1F2;
+  font-weight: bold;
+}
+
+.button {
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 30px;
+  position: relative;
+  width: 120px;
+  height: 32px;
+  line-height: 32px;
+  border-radius: 2px;
+  font-size: 0.9em;
+  background-color: #fff;
+  color: #646464;
+}
+
+.button > paper-ripple {
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.center {
+  text-align: center;
+}
+
+.button.raised {
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0.2s;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+.button.raised:active {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+  transition-delay: 0s;
+}
+
+.button.grey {
+      background-color: #eee;
+}
+
+div.buttons{
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+}
+
 footer div{
   width: 100%;
-  height: 40px;
+  height: 50px;
   right: 0;
   bottom: 0;
   left: 0;
   position: absolute;
-  background-color: #03A9F4;
+/*  background-color: #03A9F4;*/
+  /*background-image: linear-gradient(-90deg, #969EC0, #009479
+
+  background-image: linear-gradient(-90deg, #969EC0, #009479*/
+  background-image: linear-gradient(-90deg, #6CADEA, #007E94);
   -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
 }
 
+footer div img{
+  cursor: pointer;
+}
+
+div.container-fixed{
+  position: fixed;
+  margin-top: -32%;
+  margin-left: 1%;
+  padding: 8px;
+  text-align: center;
+  background-color: #F5F5F5;
+}
+
+div.container-button-fixed{
+  position: fixed;
+  margin-top: -10%;
+  margin-left: 1%;
+  padding: 8px;
+  text-align: center;
+  background-color: #F5F5F5;
+  transition: background-color 0.5s ease;
+}
+
+div.container-button-fixed:hover{
+  background-color: #A4D5EB;
+}
+
 footer img{
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   display: block;
   position: relative;
   margin: 5px auto;
@@ -26,10 +120,22 @@ html,body,div#main,.map-gic{
   padding: 0;
 }
 
+h2#configTitle{
+  font-size: 2em;
+}
+
 h2{
   color: #212121;
   text-align: center;
   font-size: 1.2em;
+  font-family: 'Raleway', sans-serif;
+}
+
+h3{
+  color: #212121;
+  text-align: center;
+  font-size: 1.1em;
+  margin-bottom: 3px;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -39,4 +145,152 @@ h5{
   margin-bottom: 0;
   color: #212121;
   font-family: 'Raleway', sans-serif;
+}
+
+img.colorBox{
+  width: 22px;
+  height: 22px;
+  margin-bottom: 6px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  opacity: 0.1;
+  filter: alpha(opacity=40);
+}
+img.colorBox_on{
+  width: 22px;
+  height: 22px;
+  margin-bottom: 6px;
+  cursor: pointer;
+  opacity: 1;
+}
+img.img_emoji{
+  width: 22px;
+  height: 22px;
+  margin-bottom: 6px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  opacity: 0.32;
+  filter: alpha(opacity=40);
+ }
+img.img_emoji_on{
+  width: 22px;
+  height: 22px;
+  margin-bottom: 6px;
+  cursor: pointer;
+  opacity: 1;
+}
+img.img_emoji:hover{
+   opacity: 1.2;
+}
+
+img.colorBox:hover{
+  opacity: 1;
+}
+
+img.emoji{
+  width: 45px;
+  height: 45px;
+}
+img#settings{
+  position: fixed;
+  z-index: 1;
+  margin-top: -12%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+i{
+  font-size: 1.6em;
+}
+
+img#settings:hover{
+  width: 75px;
+  height: 75px;
+}
+
+
+select.selectConfigs{
+  background-color: white;
+  padding: 5px;
+  display: block;
+  cursor: pointer;
+  position: relative;
+  margin: 0 auto;
+  font-family: 'Raleway', sans-serif;
+  -webkit-appearance: button;
+  -webkit-border-radius: 2px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  -webkit-padding-end: 20px;
+  -webkit-padding-start: 2px;
+  -webkit-user-select: none;
+  background-image: url(http://i62.tinypic.com/15xvbd5.png), -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+  background-position: 97% center;
+  background-repeat: no-repeat;
+  border: 1px solid #AAA;
+  color: #555;
+  font-size: 1em;
+  overflow: hidden;
+  padding: 5px 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 200px;
+}
+
+ul{
+    -webkit-padding-start: 0px;
+    list-style: square inside url("../icons/ecareli.png");
+}
+@media all and (min-width: 400px) and (max-width: 550px) {
+  div.container-fixed{
+    margin-top: -100%;
+  }
+  div.container-button-fixed{
+    margin-top: -28%;
+  }
+}
+
+@media all and (min-width: 551px) and (max-width: 700px) {
+  div.container-fixed{
+    margin-top: -80%;
+  }
+  div.container-button-fixed{
+    margin-top: -26%;
+  }
+}
+
+@media all and (min-width: 701px) and (max-width: 740px) {
+  div.container-fixed{
+    margin-top: -68%;
+  }
+  div.container-button-fixed{
+    margin-top: -20%;
+  }
+}
+
+@media all and (min-width: 741px) and (max-width: 900px) {
+  div.container-fixed{
+    margin-top: -60%;
+  }
+  div.container-button-fixed{
+    margin-top: -15%;
+  }
+}
+
+@media all and (min-width: 901px) and (max-width: 1080px) {
+  div.container-fixed{
+    margin-top: -50%;
+  }
+  div.container-button-fixed{
+    margin-top: -15%;
+  }
+}
+
+@media all and (min-width: 1081px) and (max-width: 1200px) {
+  div.container-fixed{
+    margin-top: -45%;
+  }
+  div.container-button-fixed{
+    margin-top: -13%;
+  }
 }

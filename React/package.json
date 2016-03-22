@@ -1,0 +1,27 @@
+{
+  "name": "Ubi",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "babelify": "~7.2.0",
+    "react": "~0.14.7",
+    "browserify": "~13.0.0",
+    "react-dom": "~0.14.7",
+    "watchify": "~3.7.0",
+    "babel-preset-react": "~6.5.0",
+    "react-google-maps": "~4.9.1",
+    "react-pure-render": "~1.0.2",
+    "reactify": "~1.1.1",
+    "react-googlemaps": "~0.4.0",
+    "react-bootstrap": "~0.28.3",
+    "react-modal": "~0.6.1",
+    "pubsub-js": "~1.5.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "watchify src/main.jsx -v -t [ babelify --presets [ react ] ] -o ./public/js/main.js"
+  },
+  "author": "",
+  "license": "BSD-2-Clause"
+}
