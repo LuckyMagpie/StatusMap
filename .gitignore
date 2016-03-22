@@ -55,6 +55,7 @@ coverage.xml
 *.json
 creds
 cron.py
+*.csv
 
 # Sphinx documentation
 docs/_build/
